@@ -30,12 +30,12 @@ export default function Header() {
         >
           <ul className="navbar-nav mx-auto flex-row justify-content-center">
             <li className="nav-item">
-              <Link to={"/"} className="nav-link">
+              <Link to={"/my-personal-website/"} className="nav-link">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={"profile"} className="nav-link">
+              <Link to={"/my-personal-website/profile"} className="nav-link">
                 Profile
               </Link>
             </li>
@@ -51,23 +51,32 @@ export default function Header() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link to={"product/web"} className="dropdown-item">
+                  <Link
+                    to={"/my-personal-website/product/web"}
+                    className="dropdown-item"
+                  >
                     Web
                   </Link>
                 </li>
                 <li>
-                  <Link to={"product/app"} className="dropdown-item">
+                  <Link
+                    to={"/my-personal-website/product/app"}
+                    className="dropdown-item"
+                  >
                     App
                   </Link>
                 </li>
                 <li>
-                  <Link to={"product/game"} className="dropdown-item">
+                  <Link
+                    to={"/my-personal-website/product/game"}
+                    className="dropdown-item"
+                  >
                     Game
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to={"product/management-system"}
+                    to={"/my-personal-website/product/management-system"}
                     className="dropdown-item"
                   >
                     Management System

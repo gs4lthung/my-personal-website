@@ -15,7 +15,7 @@ export default function App() {
         <Background />
         <Routes>
           <Route
-            path="/"
+            path="/my-personal-website/"
             element={
               <Suspense fallback={<ScreenLazyLoad />}>
                 <ScreenHome />
@@ -23,7 +23,7 @@ export default function App() {
             }
           />
           <Route
-            path="profile"
+            path="/my-personal-website/profile"
             element={
               <Suspense fallback={<ScreenLazyLoad />}>
                 <ScreenProfile />
