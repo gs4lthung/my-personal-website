@@ -18,6 +18,10 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
+  .lazy-load-image-background.blur.lazy-load-image-loaded {
+    margin: 0 auto;
+    background-color: red($color: #fa0404);
+  }
   &__img {
     width: 150px;
     height: 150px;
