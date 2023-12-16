@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_personal_website=self.webpackChunkmy_personal_website||[]).push([[890],{669:(e,s,a)=>{a.r(s),a.d(s,{default:()=>l});a(791);const t=a.p+"static/media/my_avt.5845b890fca5beb66b4c.png";var c=a(184);function l(){return(0,c.jsx)("div",{className:"form-layout",children:(0,c.jsx)("img",{className:"form-layout__img",src:t,alt:"LTHung"})})}}}]);
+//# sourceMappingURL=890.ec43820d.chunk.js.map
