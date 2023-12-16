@@ -34,7 +34,7 @@ export default function App() {
             path="*"
             element={
               <Suspense fallback={<ScreenLazyLoad />}>
-                <ScreenError error={404} />
+                <ScreenError error={404} description={"Page not found"} />
               </Suspense>
             }
           />

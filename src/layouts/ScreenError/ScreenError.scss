@@ -174,13 +174,28 @@ h1 {
 .link-container {
   text-align: center;
 }
-a.more-link {
+// a.more-link {
+//   text-transform: uppercase;
+//   font-size: 13px;
+//   background-color: #04d816;
+//   padding: 10px 15px;
+//   border-radius: 20px;
+//   color: #e001a9ee;
+//   display: inline-block;
+//   margin-right: 5px;
+//   margin-bottom: 5px;
+//   line-height: 1.5;
+//   text-decoration: none;
+//   margin-top: 50px;
+//   letter-spacing: 1px;
+// }
+.more-link {
   text-transform: uppercase;
   font-size: 13px;
-  background-color: #92a4ad;
+  background-color: #000000;
   padding: 10px 15px;
-  border-radius: 0;
-  color: #416475;
+  border-radius: 20px;
+  color: #ffffffee;
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -188,4 +203,36 @@ a.more-link {
   text-decoration: none;
   margin-top: 50px;
   letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition properties */
+
+  &:hover {
+    /* Styles for hover state */
+    background-color: #ffffffee;
+    color: #020202;
+    /* Add any other hover effect styles here */
+    animation: shake 0.5s ease-in-out; /* Apply the shake animation */
+  }
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+      transform: scale(1);
+    }
+    20% {
+      transform: translateX(-10px);
+      transform: scale(1.2);
+    }
+    40% {
+      transform: translateX(10px);
+      transform: scale(1.4);
+    }
+    60% {
+      transform: translateX(-10px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }
