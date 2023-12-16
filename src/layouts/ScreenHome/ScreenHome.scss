@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --font-size: calc(1.5vw + 1.5vh);
+  --bg-size: calc(2vw + 2vh);
+  --shadow-color: #ec0000;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  font-family: "Press Start 2P", cursive;
+}
+.welcome-text {
+  font-size: calc(1.2vw + 1.2vh);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow if text exceeds the container */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+}
+.Title {
+  position: absolute;
+  top: calc(100% + 10px); /* Adjust the distance below the welcome-text */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: var(--font-size);
+  text-transform: uppercase;
+  color: black;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow if text exceeds the container */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+  background: url("https://phoneky.co.uk/thumbs/screensavers/down/games/supermario_cbnan4c8.gif")
+    no-repeat;
+  background-size: var(--bg-size);
+  -webkit-filter: drop-shadow(0 0 30px var(--shadow-color));
+  filter: drop-shadow(0 0 30px var(--shadow-color));
+  -webkit-background-clip: text; /* For Chrome and Safari 3 */
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent;
+  background-position: calc(var(--bg-size) * -1) bottom;
+  text-rendering: optimizeLegibility;
+  transition: linear 2s;
+}
+
+.Background {
+  z-index: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: white;
+  position: absolute;
+  -webkit-filter: drop-shadow(0 0 30px #753200) !important;
+  filter: drop-shadow(0 0 30px #753200) !important;
+}
