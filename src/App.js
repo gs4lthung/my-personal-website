@@ -4,7 +4,9 @@ import Header from "./layouts/Header/Header";
 import Background from "./layouts/Background/Background";
 import ScreenLazyLoad from "./layouts/ScreenLazyLoad/ScreenLazyLoad";
 const ScreenHome = lazy(() => import("./layouts/ScreenHome/ScreenHome"));
-const ScreenProfile = lazy(() => import("./layouts/Profile/ScreenProfile"));
+const ScreenProfile = lazy(() =>
+  import("./layouts/ScreenProfile/ScreenProfile")
+);
 const ScreenError = lazy(() => import("./layouts/ScreenError/ScreenError"));
 
 export default function App() {

@@ -28,8 +28,7 @@
     margin: 20px auto 0px;
     border-radius: 50%;
     border-style: ridge;
-    transition: transform 500ms;
-
+    transition: 500ms !important;
     &:hover {
       transform: rotate(25deg) scale(1.15);
     }
