@@ -158,7 +158,7 @@ export default function Header() {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to="https://github.com/LTHung0412"
+                    to="https://github.com/gs4lthung"
                     target="_blank"
                   >
                     <img src={githubIcon} alt="Github" width="30" height="30" />
